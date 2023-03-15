@@ -1,5 +1,5 @@
 " Copy current file path to clipboard
-function! CopyPathToClipboard()
+function! PathToClipboard()
   let l:file_path = expand('%:p')
   let l:current_row_number = line('.')
   let l:cwd = getcwd() . '/'
@@ -20,4 +20,4 @@ function! CopyPathToClipboard()
   endif
 endfunction
 
-command! CopyPathToClipboard call CopyPathToClipboard()
+command! PathToClipboard call PathToClipboard()
